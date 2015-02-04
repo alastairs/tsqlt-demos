@@ -18,7 +18,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE AlbumsForArtistByName
+ALTER PROCEDURE AlbumsForArtistByName
 	-- Add the parameters for the stored procedure here
 	@artistName NVARCHAR(120)
 AS
@@ -34,8 +34,4 @@ BEGIN
 		ON dbo.Album.ArtistId = dbo.Artist.ArtistId
 	WHERE dbo.Artist.Name = @artistName;
 END
-GO
-
--- DOES IT WORK??
-EXEC [dbo].[AlbumsForArtistByName] @artistName = N'AC/DC'
 GO
