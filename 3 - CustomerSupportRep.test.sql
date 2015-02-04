@@ -50,5 +50,3 @@ BEGIN
 	
 END;
 GO
-
-EXEC tsqlt.RunTestClass @TestClassName = N'CustomerSupport';
