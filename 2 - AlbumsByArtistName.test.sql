@@ -6,6 +6,9 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+EXEC tSQLt.NewTestClass 'MusicTests'
+GO
+
 CREATE PROCEDURE [MusicTests].[test AlbumsForArtistByName returns the albums for the given artist]
 AS
 BEGIN
@@ -30,3 +33,4 @@ BEGIN
 		@Expected = '#expected',
 	    @Actual = '#actual'
 END;
+GO
