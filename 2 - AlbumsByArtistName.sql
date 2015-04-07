@@ -18,7 +18,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-ALTER PROCEDURE AlbumsForArtistByName
+CREATE PROCEDURE AlbumsForArtistByName
 	-- Add the parameters for the stored procedure here
 	@artistName NVARCHAR(120)
 AS
